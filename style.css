@@ -1,59 +1,217 @@
-body, html {
-    height: 100%;
-    background-image:url("hotahmsaqih91.webp");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position: 50% 0;
-    background-size:cover;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+a {
+  color: #fff;
+  font-style: normal;
+}
+.whiteDesc {
+  color: black;
+  background-color: #eeebc9;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+.desc {
+  color: white;
+  position: relative;
+  background-color: #302f3a;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
 }
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("YO3EXANZVFB6RBQVH5AT4NSTTY.avif");
+p {
+  text-align:center;
+}
 
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9,
+.bgimg-10,
+.bgimg-11,
+.bgimg-12 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+}
+.bgimg-1 {
+  background-image: url("62fea863ec781d001868c1f4.webp");
+  min-height: 100%;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
+.bgimg-2 {
+  background-image: url("Screenshot\ 2023-03-05\ 211021.png");
+  min-height: 800px;
+}
+
+.bgimg-3 {
+  background-image: url("Screenshot\ 2023-03-05\ 210706.png");
+  min-height: 800px;
+}
+.bgimg-4 {
+  background-image: url("Screenshot\ 2023-03-05\ 211655.png");
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bgimg-5 {
+  background-image: url("andrew-tate-1-1536x864.jpg");
+  min-height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bgimg-6 {
+  background-image: url("andrew-tate-kickboxer-ba463a60-ef40-4dbe-866e-85b28540a9f-resize-750.webp");
+  min-height: 100%;
+}
+
+
+.caption {
   position: absolute;
+  left: 0;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .name {
+  background-color: transparent;
+  font-size: 25px;
+  letter-spacing: 10px;
   color: white;
+  font-weight: bold;
+}
+.red {
+  text-shadow: 0 0 10px red, 0 0 50px red;
+}
+.orange {
+  text-shadow: 0 0 10px red, 0 0 50px yellow;
+}
+.yellow {
+  text-shadow: 0 0 10px yellow, 0 0 50px yellow;
+}
+.green {
+  text-shadow: 0 0 10px yellow, 0 0 50px blue;
+}
+.blue {
+  text-shadow: 0 0 10px blue, 0 0 50px blue;
 }
 
-.green-box {
-  position: relative;
-  text-align:center;
-  padding: 18px 0;
-  margin:auto;
-  background: lightblue;
-  width: 75%;
-  top: -30px;
-  height: 450px;
-  opacity:95%;
+.caption span.border {
+  background-color: black;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.name {
+  background-color: transparent;
+  font-size: 25px;
+  color: #f7f7f7;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bg-img-4,
+  .bg-img-5 {
+    background-attachment: scroll;
   }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
+}
+h1 {
+  cursor: pointer;
+}
+h1 span {
+  transition: 0.5s;
+}
+h1.red:hover span {
+  color: darkred;
+  text-shadow: 0 0 10px darkred, 0 0 50px;
+}
+h1.orange:hover span {
+  color: orange;
+  text-shadow: 0 0 10px orangered, 0 0 20px;
+}
+h1.yellow:hover span {
+  color: yellow;
+  text-shadow: 0 0 10px yellow, 0 0 20px;
+}
+h1.green:hover span {
+  color: green;
+  text-shadow: 0 0 10px darkgreen, 0 0 20px;
+}
+h1.blue:hover span {
+  color: blue;
+  text-shadow: 0 0 10px darkblue, 0 0 20px;
+}
+
+.rainbow-letters {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.rainbow-letters span:nth-child(10n + 1) {
+  color: #ef5350;
+}
+
+.rainbow-letters span:nth-child(10n + 2) {
+  color: #ab47bc;
+}
+
+.rainbow-letters span:nth-child(10n + 3) {
+  color: #651fff;
+}
+
+.rainbow-letters span:nth-child(10n + 5) {
+  color: #3949ab;
+}
+
+.rainbow-letters span:nth-child(10n + 4) {
+  color: #2196f3;
+}
+
+.rainbow-letters span:nth-child(10n + 6) {
+  color: #00bcd4;
+}
+
+.rainbow-letters span:nth-child(10n + 7) {
+  color: #4caf50;
+}
+
+.rainbow-letters span:nth-child(10n + 8) {
+  color: #ffc107;
+}
+.rainbow-letters span:nth-child(10n + 9) {
+  color: salmon;
+}
+.rainbow-letters span:nth-child(10n + 10) {
+  color: paleturquoise;
+}
